@@ -7,7 +7,7 @@ name := "play2-sentry"
 version := "2.0.1-SNAPSHOT"
 libraryDependencies ++= Seq(
   "io.sentry"         %  "sentry-logback" % "1.7.5",
-  "com.typesafe.play" %% "play"           % "2.4.11" % "provided"
+  "com.typesafe.play" %% "play"           % "2.6.12" % "provided"
 )
 publishTo := version { v: String =>
   sys.env.get("REPOSITORY_URL").map { base =>
